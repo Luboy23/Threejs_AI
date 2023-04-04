@@ -31,11 +31,11 @@ const Home = () => {
                           </h1>
                         </motion.div >
                         <motion.div {...headContentAnimation} className='flex flex-col gap-5'>
-                            <p className='max-w-md font-normal text-gray-600 text-base'>Create your unique and exclusive shirt with our brand-new 3D customization tool. <strong>Unleash your imagination</strong>{" "} and define your own style.</p>
+                            <p className='max-w-md font-normal text-gray-600 text-base'>使用全新的Three.js——3D定制工具创造一件属于你的衬衫。<br/><strong>释放你的想象力</strong>{" "}<br/>定义你自己的专属风格。<br /> Created by: @lllu_23</p>
 
                             <CustomButton
                                 type="filled"
-                                title='Customize It'
+                                title='开始定制'
                                 handleClick={() => state.intro = false}
                                 customStyles= 'w-fit px-4 py-2.5 font-bold text-sm'
                             />

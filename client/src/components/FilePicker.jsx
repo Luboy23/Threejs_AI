@@ -14,11 +14,11 @@ const FilePicker = ({file, setFile, readFile}) => {
           onChange={(e) => setFile(e.target.files[0])}
         />
         <label htmlFor='file-upload' className='filepicker-label'>
-        Upload File
+        上传文件
         </label>
 
         <p className='mt-2 text-gray-500 text-xs truncate' >
-          {file === '' ? "No file selected" : file.name}
+          {file === '' ? "还没有文件被选中" : file.name}
         </p>
       </div>
 
@@ -32,7 +32,7 @@ const FilePicker = ({file, setFile, readFile}) => {
 
 <CustomButton
         type='filled'
-          title='覆盖整件短袖'
+          title='覆盖短袖'
           handleClick={() => readFile('full')}
           customStyles='text-xs'
         />
